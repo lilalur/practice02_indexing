@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat bot</title>
+</head>
+<body>
+    <article class="container">
+        <section class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-3">4</div>
+        </section>
+        <section class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-3">4</div>
+        </section>
+        <section class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-3">4</div>
+        </section>
+        <section class="row"></section>
+        <section class="row"></section>
+    </article>
+</body>
+</html>
+<script>
+    var rows = document.getElementsByClassName("row");
+    Array.from(rows).forEach((ele,counter) => {
+        counter++;
+        const idele = "section"+counter;
+        ele.setAttribute("id",idele);
+    });
+    
+    // var rows = document.getElementsByTagName("div");
+    // Array.from(rows).forEach((ele,counter) => {
+    //     counter++;
+    //     const idele = "div"+counter;
+    //     ele.setAttribute("id",idele);
+    // });
+    // var container = document.querySelector(".container");
+    // var matches = container.querySelectorAll("section, div");
+    // Array.from(matches).forEach((ele,counter) => {
+    //     counter++;
+    //     const eleid = "div"+counter;
+    //     ele.setAttribute("id",eleid);
+    // });
+</script>
